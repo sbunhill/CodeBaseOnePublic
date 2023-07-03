@@ -1,5 +1,7 @@
 ## Description
 
+**N.B - no real keys of secrets are exposed in these repo!**
+
 #### Demo Solution comprising 2 Projects:
 
 1. CodeBaseOne - API codebase in .NET 6 with Authentication and Authorization built from scratch - with JWT + Refresh token (received by client as HttpOnly cookie. Runs against PostgreSQL db.
