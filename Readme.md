@@ -55,7 +55,7 @@ Will need to provide appsettings to run this project. The appsettings.json file 
 
 Client submits email address and password. Email format is verified. Checks that User email does not already exist. Validates password strength. Creates hash of password. Creates new User row. The hash is stored.
 
-**N.B. in a deployment there would be an additiobnal series of steps requiring the user to verify the email address. Have implemented similar in other projects**
+**N.B. in a deployment there would be an additional series of steps requiring the user to verify the email address. Have implemented similar in other projects**
 
 <br/>
 
