@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "ee59f3bc-7bf3-4d4e-897c-29cd5dd35a3b",
+		"name": "CodeBaseOneAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5597950"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"simon@example.com\",\r\n    \"password\":\"TokenHamzx81@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7276/api/auth/register",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7276",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"simon@example.com\",\r\n  \"password\": \"TokenHamzx81@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7276/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7276",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7276/api/auth/refresh-token",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7276",
+							"path": [
+								"api",
+								"auth",
+								"refresh-token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMCIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTY4ODI5NzAzMiwiZXhwIjoxNjg4MzAwNjMyLCJpYXQiOjE2ODgyOTcwMzJ9.Uwnu0uFgGaNIL1yZaymHMCO7hl0wT1wz13x8y8KYB5N7OPiMebnRXzxvWoxDE69yKSvCmgj8G9egjAEZTUuivA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7276/api/product/getproducts/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7276",
+							"path": [
+								"api",
+								"product",
+								"getproducts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxIiwicm9sZSI6IkFkbWluIiwibmJmIjoxNjg4MzcyMDczLCJleHAiOjE2ODgzNzU2NzMsImlhdCI6MTY4ODM3MjA3M30.3JYEbPFnR1AeB3LNTdihHrp0wCl1tjiAOgm6gMG092_jkN7rCaLoLdpBy0n8j0JK4xzfGUHR0q4HO6YJ9hG2fA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"vintage 1209 - 1930s\",\r\n    \"brand\": \"Anglepoise\",\r\n    \"size\" : 1,\r\n    \"price\": 500,\r\n    \"note\": \"random stuff\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7276/api/product/add",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7276",
+							"path": [
+								"api",
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by Id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMCIsInJvbGUiOiJBZG1pbiIsIm5iZiI6MTY4ODIzNjk0OCwiZXhwIjoxNjg4MjQwNTQ4LCJpYXQiOjE2ODgyMzY5NDh9.6iaekyIk0gw2Fy0bv5L-T-v7CATZ6hcjbvE61SovnopBobWgQ3wGqmVuSwQX4Hv44CzFAAv8XKHtEo4lTM5iNw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7276/api/product/getproduct/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7276",
+							"path": [
+								"api",
+								"product",
+								"getproduct",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Home",
+			"item": [
+				{
+					"name": "launch url",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7276/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7276",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "healthcheck",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7276/healthcheck/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7276",
+							"path": [
+								"healthcheck",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
