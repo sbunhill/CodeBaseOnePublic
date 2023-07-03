@@ -1,6 +1,6 @@
 ## Description
 
-**N.B - no real keys of secrets are exposed in this repo - including the Postman collection**
+**N.B - no real keys or secrets are exposed in this repo - including the Postman collection**
 
 #### Demo Solution comprising 2 Projects:
 
