@@ -33,7 +33,7 @@ Tests the Auth service class interface - i.e. the 4 Public methods. These in-tur
 
 ## Code Coverage
 
-Using Coverlet to calculated coverage.
+Using Coverlet to calculate coverage.
 
 **N.B. in this demo I have focused on testing the Auth service layer and have deliberately excluded much of the code from coverage analysis**
 
@@ -45,7 +45,7 @@ Using Coverlet to calculated coverage.
 
 ## Appsettings
 
-Will need to provide appsettings to run this project. In a live deployment we would be using a secrets store.
+Will need to provide appsettings to run this project. The appsettings.json file should be self-explanatory. In a live deployment we would be using a secrets store.
 
 <br/>
 
