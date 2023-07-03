@@ -1,6 +1,6 @@
 ## Description
 
-**N.B - no real keys of secrets are exposed in these repo!**
+**N.B - no real keys of secrets are exposed in this repo!**
 
 #### Demo Solution comprising 2 Projects:
 
