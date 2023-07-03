@@ -20,23 +20,12 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
     {
-        //Version = "v1",
         Title = "CodeBase One - API base project",
         Description = "base API project with Authentication and Authorization built from scratch - with 1 addition demo entity",
     });
 
-    // using System.Reflection;
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
-
-    //options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
-    //{
-    //    Description = "Standard Authorization header using the Bearer scheme (\"bearer {token}\")",
-    //    In = ParameterLocation.Header,
-    //    Name = "Authorization",
-    //    Type = SecuritySchemeType.ApiKey
-    //});
-    //options.OperationFilter<SecurityRequirementsOperationFilter>();
 });
 
 var appSettingsToken = builder.Configuration.GetSection("AppSettings:Token").Value;
