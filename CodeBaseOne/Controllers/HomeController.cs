@@ -33,14 +33,5 @@ namespace CodeBaseOne.Controllers
             return Ok("Ok");
         }
 
-        ///// <summary>
-        ///// No Authentication required.
-        ///// </summary>
-    //    [ApiExplorerSettings(IgnoreApi = true)]
-    //    [Route("/error")]
-    //    public async Task<ActionResult> ShowError()
-    //    {
-    //        return StatusCode(StatusCodes.Status500InternalServerError);
-    //    }
     }
 }

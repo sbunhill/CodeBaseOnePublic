@@ -1,7 +1,5 @@
-﻿using CodeBaseOne.EfCore;
-using CodeBaseOne.Models.Dto;
+﻿using CodeBaseOne.Models.Dto;
 using CodeBaseOne.Models.ServiceResponse;
-using System.Security.Claims;
 
 namespace CodeBaseOne.Services.Interfaces
 {

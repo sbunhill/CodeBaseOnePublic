@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using CodeBaseOne.Models.Dto;
 using CodeBaseOne.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication;
-using System.Security.Claims;
 using System.Diagnostics.CodeAnalysis;
 
 namespace CodeBaseOne.Controllers.api

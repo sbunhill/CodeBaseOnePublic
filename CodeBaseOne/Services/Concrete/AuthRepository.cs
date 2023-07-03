@@ -11,7 +11,6 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
-using System.Security.Cryptography.Xml;
 
 namespace CodeBaseOne.Services.Concrete
 {

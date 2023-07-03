@@ -5,7 +5,6 @@ using Microsoft.OpenApi.Models;
 using CodeBaseOne.EfCore;
 using CodeBaseOne.Services.Concrete;
 using CodeBaseOne.Services.Interfaces;
-using Swashbuckle.AspNetCore.Filters;
 using System.Diagnostics;
 using System.Text;
 using CodeBaseOne.Middlewares;
