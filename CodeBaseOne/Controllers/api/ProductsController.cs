@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using CodeBaseOne.Models.Dto;
@@ -38,6 +38,7 @@ namespace CodeBaseOne.Controllers.api
         /// </summary>
         /// <response code="200">JSON object returned</response>
         /// <response code="401">Unauthorized - reason logged but not returned</response>
+        /// <response code="403">Forbidden - valid credentials but insufficient privileges</response>
         /// <response code="404">Not Found</response>
         /// <response code="500">Exception - reason logged but not returned</response>
         [HttpGet]
@@ -53,6 +54,7 @@ namespace CodeBaseOne.Controllers.api
         /// </summary>
         /// <response code="200">JSON array returned - empty [] if none found</response>
         /// <response code="401">Unauthorized - reason logged but not returned</response>
+        /// <response code="403">Forbidden - valid credentials but insufficient privileges</response>
         /// <response code="500">Exception - reason logged but not returned</response>
         [HttpGet]
         [Route("getproducts/")]
@@ -90,6 +92,7 @@ namespace CodeBaseOne.Controllers.api
         /// <response code="200">JSON object returned: new product including id</response>
         /// <response code="400">Bad Request - context save returned zero - e.g. - name is not unique - or dto data annotations violations</response>
         /// <response code="401">Unauthorized - reason will be logged but not returned</response>
+        /// <response code="403">Forbidden - valid credentials but insufficient privileges</response>
         /// <response code="500">Exception - reason will be logged but not returned</response>
         [HttpPost]
         [Route("add/")]
