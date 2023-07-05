@@ -87,7 +87,7 @@ The `/healthcheck` endpoint is `AllowAnonymous`.
 Products is a demo entity - with associated Controller endpoints and Services layer.
 The Products Controller uses attribute routing - and Role based Authorization - for now Users must be Admin - as defined in the token claims.
 
-Returns either 200, 400, 401 or 403. 403 can currently only be replicated by deliberately hardcoding a Role other than `Admin` in the AuthRepository service - i.e. valid credentials but insufficient privileges.
+Returns either 200, 400, 401, 403 or 500. 403 can currently only be replicated by deliberately hardcoding a Role other than `Admin` in the AuthRepository service - i.e. valid credentials but insufficient privileges.
 
 Additionally - in `/getproducts` there is POC code to demo getting the User Id from the bearer token. User Id is a typical starting point. For example, in a multi-tenancy application we might typically need to know the which Company's the User is a member of.
 
