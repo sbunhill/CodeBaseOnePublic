@@ -82,8 +82,10 @@ Any unexpected Exceptions during login and refresh are caught by the Exception M
 
 ## Authorization
 
+The `/healthcheck` endpoint is `AllowAnonymous`.
+
 Products is a demo entity - with associated Controller endpoints and Services layer.
-The Products Controller uses attribute routing - and Role based Authorization - for now Users must be Admin - as defined in the token claims. With the exception of `/healthcheck` which is AllowAnonymous.
+The Products Controller uses attribute routing - and Role based Authorization - for now Users must be Admin - as defined in the token claims.
 
 Additionally - in `/getproducts` there is POC code to demo getting the User Id from the bearer token. User Id is a typical starting point. For example, in a multi-tenancy application we might typically need to know the which Company's the User is a member of.
 
@@ -126,4 +128,4 @@ See launch.json for profiles
 (From folder with .sln)
 Under Linux:
 
-`docker build -f PostrgresSQLAPI01/Dockerfile --force-rm -t postgresqlapi01 . `
+`docker build -f CodeBaseOne/Dockerfile --force-rm -t codebaseone01 .`
