@@ -29,7 +29,7 @@
 
 ## xUnit Tests
 
-Tests the Auth service class interface - i.e. the 4 Public methods. These in-turn call all of the Private methods ensuring code coverage. These Auth layer tests are using an in-memory db - created fresh for each separate test. The best current advise including MS seems to be against mocking DBContext. Arguably therefore these are Integration rather than Unit tests.
+Tests the Auth service class interface - i.e. the 4 Public methods. These in-turn call all of the Private methods ensuring code coverage. These Auth layer tests are using an in-memory db - created fresh for each separate test. The best current advice including MS seems to be against mocking DBContext. Arguably therefore these are Integration rather than Unit tests.
 
 <br/>
 
